@@ -387,7 +387,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                         )
 
                         # Result of request sent to group
-                        replyText = f"<b>Dear {mentionUser}🧑\nYour request for {contentRequested} {groupResult}\n👍Thanks for requesting!</b>"
+                        replyText = f"<b>Dear {mentionUser}🧑\nYour request for {contentRequested} {groupResult}\n\n 🔖Check tsnmstream4u.gq or only4k.xyz For Your files \n\n👍Thanks for requesting!</b>"
                         await bot.send_message(
                             int(groupID),
                             replyText,
