@@ -353,7 +353,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                             button = InlineKeyboardButton("Request Rejected🚫", "rejected")
                         elif data == "done":
                             result = "COMPLETED"
-                            groupResult = "is Completed🥳. \n\n Check @tsnmstream4u Updates or @Only_4k channel To Get Your Files."
+                            groupResult = "is Completed🥳. \n\n 📲 Vist https://tsnmstream4u.gq or https://Only4k.xyz for Your Request Uploads \n And Join @tsnmstream4u & @only_4K To Get Updates."
                             button = InlineKeyboardButton("Request Completed✅", "completed")
                         elif data == "unavailable":
                             result = "UNAVAILABLE"
