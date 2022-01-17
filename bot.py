@@ -292,7 +292,7 @@ async def requestHandler(bot:Update, msg:Message):
                 )
             )
 
-            replyText = f"<b>👋 Hello {mentionUser} !!\n\n📍 Your Request for {contentRequested} has been submitted to the admins.\n\n🚀 Your Request Will Be Uploaded soon.\n ⭕Note :- If You Didn't Follow The Request Format Your Request Will be Rejected \n °See Request Format by Sending #format \n\n📌 Please Note that Admins might be busy. So, this may take more time.\n\n 🔖Join @tsnmstream4u & @only_4K to Get Updates \n👇 See Your Request Status Here 👇</b>"
+            replyText = f"<b>👋 Hello {mentionUser} !!\n\n📍 Your Request for {contentRequested} has been submitted to the admins.\n\n🚀 Your Request Will Be Uploaded soon.\n\n 📌 Note :- If You Didn't Follow The Request Format Your Request Will be Rejected \n\n 📄 See Request Format by Sending #format \n\n📌 Please Note that Admins might be busy. So, this may take more time.\n\n 🔖Join @tsnmstream4u & @only_4K to Get Updates \n\n👇 See Your Request Status Here 👇</b>"
 
             # Sending message for user in group
             await msg.reply_text(
@@ -353,7 +353,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                             button = InlineKeyboardButton("Request Rejected🚫", "rejected")
                         elif data == "done":
                             result = "COMPLETED"
-                            groupResult = "is Completed🥳."
+                            groupResult = "is Completed🥳. \n\n Check @tsnmstream4u Updates or @Only_4k channel To Get Your Files."
                             button = InlineKeyboardButton("Request Completed✅", "completed")
                         elif data == "unavailable":
                             result = "UNAVAILABLE"
@@ -387,7 +387,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                         )
 
                         # Result of request sent to group
-                        replyText = f"<b>Dear {mentionUser}🧑\nYour request for {contentRequested} {groupResult}\n\n 🔖Check tsnmstream4u.gq or only4k.xyz For Your files \n\n👍Thanks for requesting!</b>"
+                        replyText = f"<b>Dear {mentionUser} 👤 \nYour request for {contentRequested} {groupResult}\n\n 👍Thanks for requesting!</b>"
                         await bot.send_message(
                             int(groupID),
                             replyText,
